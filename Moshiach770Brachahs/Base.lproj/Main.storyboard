@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N2U-oD-e8V">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Menu-->
+        <scene sceneID="fa9-SG-3no">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="vOE-AL-xWe" customClass="menuItemTableViewController" customModule="Moshiach770Brachahs" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="H5d-t3-VUO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" id="UqH-5C-zDW" customClass="menuTableViewCell" customModule="Moshiach770Brachahs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UqH-5C-zDW" id="Z2G-ze-Gmv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menuLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-mq-n9l">
+                                            <rect key="frame" x="8" y="11" width="280" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="bb6-Yi-k9Z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dE8-mq-n9l" firstAttribute="centerY" secondItem="Z2G-ze-Gmv" secondAttribute="centerY" id="KQh-N5-xXV"/>
+                                        <constraint firstItem="dE8-mq-n9l" firstAttribute="leading" secondItem="Z2G-ze-Gmv" secondAttribute="leadingMargin" id="mSE-Ti-J4e"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="menuItem" destination="dE8-mq-n9l" id="Cu5-3g-K7s"/>
+                                    <segue destination="zsU-P4-aAe" kind="show" id="qCW-5y-yPE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vOE-AL-xWe" id="h9h-eJ-Wr9"/>
+                            <outlet property="delegate" destination="vOE-AL-xWe" id="Ajw-Xf-5H3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Menu" id="Sfq-Bt-NHr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFj-a8-azn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="170"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ihS-xj-m6q">
+            <objects>
+                <viewController id="zsU-P4-aAe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cns-ZG-p7i"/>
+                        <viewControllerLayoutGuide type="bottom" id="RwO-ke-5Lp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="js8-4Z-fuk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-E9-Udo">
+                                <rect key="frame" x="20" y="72" width="333" height="396"/>
+                                <mutableString key="text">	When writing to the Rebbe King Moshiach Shlita include your Jewish Name and Mothers’s name (a non-Jew writes their father’s name) and likewise for all those you are requesting a blessing for (family name is not necessary). Good news is also something to write to the Rebbe King Moshiach Shlita and god resolutions to add in Torah and Mitzvos(especially Torah study about Moshiach and Tzedakah donations) which will add in receiving the blessing. Mainly accept the kingship of Moshiach by writing “Long Live the Rebbe King Moshiach forever) to his majesty. The best is to visit the Rebbe King Moshiach Shlita in person in 770 Eastern pkwy Brooklyn, New York at Sunday dollars etc. if this is not possible this app with get the letter to Moshiach.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-t3-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2181" y="170"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mt3-6g-ThO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N2U-oD-e8V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gov-Q8-bCB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vOE-AL-xWe" kind="relationship" relationship="rootViewController" id="Jfy-1V-OT2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQR-5s-WGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="170"/>
         </scene>
     </scenes>
 </document>

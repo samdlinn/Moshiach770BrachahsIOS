@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B10CDBA1D53C4C70006019B /* menuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10CDB91D53C4C70006019B /* menuTableViewCell.swift */; };
+		9B10CDBC1D54E6980006019B /* menuItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10CDBB1D54E6980006019B /* menuItemTableViewController.swift */; };
 		9B643FA21D359C9900BE4638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B643FA11D359C9900BE4638 /* AppDelegate.swift */; };
 		9B643FA41D359C9900BE4638 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B643FA31D359C9900BE4638 /* ViewController.swift */; };
 		9B643FA71D359C9900BE4638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B643FA51D359C9900BE4638 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		9B643FAC1D359C9900BE4638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B643FAA1D359C9900BE4638 /* LaunchScreen.storyboard */; };
 		9B643FB71D359C9900BE4638 /* Moshiach770BrachahsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B643FB61D359C9900BE4638 /* Moshiach770BrachahsTests.swift */; };
 		9B643FC21D359C9900BE4638 /* Moshiach770BrachahsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B643FC11D359C9900BE4638 /* Moshiach770BrachahsUITests.swift */; };
+		9B643FD01D35A43B00BE4638 /* main_menu_770.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B643FCF1D35A43B00BE4638 /* main_menu_770.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B10CDB91D53C4C70006019B /* menuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewCell.swift; sourceTree = "<group>"; };
+		9B10CDBB1D54E6980006019B /* menuItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuItemTableViewController.swift; sourceTree = "<group>"; };
 		9B643F9E1D359C9900BE4638 /* Moshiach770Brachahs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moshiach770Brachahs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B643FA11D359C9900BE4638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B643FA31D359C9900BE4638 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		9B643FBD1D359C9900BE4638 /* Moshiach770BrachahsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moshiach770BrachahsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B643FC11D359C9900BE4638 /* Moshiach770BrachahsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moshiach770BrachahsUITests.swift; sourceTree = "<group>"; };
 		9B643FC31D359C9900BE4638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B643FCF1D35A43B00BE4638 /* main_menu_770.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_menu_770.jpg; path = Images/main_menu_770.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		9B643F951D359C9800BE4638 = {
 			isa = PBXGroup;
 			children = (
+				9B10CDBB1D54E6980006019B /* menuItemTableViewController.swift */,
+				9B643FCF1D35A43B00BE4638 /* main_menu_770.jpg */,
 				9B643FA01D359C9900BE4638 /* Moshiach770Brachahs */,
 				9B643FB51D359C9900BE4638 /* Moshiach770BrachahsTests */,
 				9B643FC01D359C9900BE4638 /* Moshiach770BrachahsUITests */,
@@ -100,6 +108,7 @@
 				9B643FA11D359C9900BE4638 /* AppDelegate.swift */,
 				9B643FA31D359C9900BE4638 /* ViewController.swift */,
 				9B643FA51D359C9900BE4638 /* Main.storyboard */,
+				9B10CDB91D53C4C70006019B /* menuTableViewCell.swift */,
 				9B643FA81D359C9900BE4638 /* Assets.xcassets */,
 				9B643FAA1D359C9900BE4638 /* LaunchScreen.storyboard */,
 				9B643FAD1D359C9900BE4638 /* Info.plist */,
@@ -231,6 +240,7 @@
 			files = (
 				9B643FAC1D359C9900BE4638 /* LaunchScreen.storyboard in Resources */,
 				9B643FA91D359C9900BE4638 /* Assets.xcassets in Resources */,
+				9B643FD01D35A43B00BE4638 /* main_menu_770.jpg in Resources */,
 				9B643FA71D359C9900BE4638 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B643FA41D359C9900BE4638 /* ViewController.swift in Sources */,
+				9B10CDBC1D54E6980006019B /* menuItemTableViewController.swift in Sources */,
+				9B10CDBA1D53C4C70006019B /* menuTableViewCell.swift in Sources */,
 				9B643FA21D359C9900BE4638 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +494,7 @@
 				9B643FC81D359C9900BE4638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B643FC91D359C9900BE4638 /* Build configuration list for PBXNativeTarget "Moshiach770BrachahsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				9B643FCB1D359C9900BE4638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B643FCC1D359C9900BE4638 /* Build configuration list for PBXNativeTarget "Moshiach770BrachahsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				9B643FCE1D359C9900BE4638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
