@@ -28,7 +28,7 @@
                                                 <constraint firstAttribute="width" constant="280" id="bb6-Yi-k9Z"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -39,7 +39,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="menuItem" destination="dE8-mq-n9l" id="Cu5-3g-K7s"/>
-                                    <segue destination="zsU-P4-aAe" kind="show" id="qCW-5y-yPE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -49,15 +48,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Menu" id="Sfq-Bt-NHr"/>
+                    <connections>
+                        <segue destination="m6V-B7-PXI" kind="show" identifier="Information" id="Qjq-2P-YEH"/>
+                        <segue destination="zsU-P4-aAe" kind="show" identifier="Instruction" id="meE-ZN-LDL"/>
+                        <segue destination="Kjt-3x-yDJ" kind="show" identifier="Request" id="IX6-bj-TcJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFj-a8-azn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1516" y="170"/>
         </scene>
-        <!--View Controller-->
+        <!--Instruction-->
         <scene sceneID="ihS-xj-m6q">
             <objects>
-                <viewController id="zsU-P4-aAe" sceneMemberID="viewController">
+                <viewController title="Instruction" id="zsU-P4-aAe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cns-ZG-p7i"/>
                         <viewControllerLayoutGuide type="bottom" id="RwO-ke-5Lp"/>
@@ -66,20 +70,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-E9-Udo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-E9-Udo">
                                 <rect key="frame" x="20" y="72" width="333" height="396"/>
-                                <mutableString key="text">	When writing to the Rebbe King Moshiach Shlita include your Jewish Name and Mothers’s name (a non-Jew writes their father’s name) and likewise for all those you are requesting a blessing for (family name is not necessary). Good news is also something to write to the Rebbe King Moshiach Shlita and god resolutions to add in Torah and Mitzvos(especially Torah study about Moshiach and Tzedakah donations) which will add in receiving the blessing. Mainly accept the kingship of Moshiach by writing “Long Live the Rebbe King Moshiach forever) to his majesty. The best is to visit the Rebbe King Moshiach Shlita in person in 770 Eastern pkwy Brooklyn, New York at Sunday dollars etc. if this is not possible this app with get the letter to Moshiach.</mutableString>
+                                <string key="text">	When writing to the Rebbe King Moshiach Shlita include your Jewish Name and Mothers’s name (a non-Jew writes their father’s name) and likewise for all those you are requesting a blessing for (family name is not necessary). Good news is also something to write to the Rebbe King Moshiach Shlita and god resolutions to add in Torah and Mitzvos(especially Torah study about Moshiach and Tzedakah donations) which will add in receiving the blessing. Mainly accept the kingship of Moshiach by writing “Long Live the Rebbe King Moshiach forever) to his majesty. The best is to visit the Rebbe King Moshiach Shlita in person in 770 Eastern pkwy Brooklyn, New York at Sunday dollars etc. if this is not possible this app with get the letter to Moshiach.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LeR-E9-Udo" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" id="Euf-hN-ljW"/>
+                            <constraint firstItem="RwO-ke-5Lp" firstAttribute="top" secondItem="LeR-E9-Udo" secondAttribute="bottom" constant="132" id="F7t-xk-tZh"/>
+                            <constraint firstItem="LeR-E9-Udo" firstAttribute="top" secondItem="Cns-ZG-p7i" secondAttribute="bottom" constant="8" symbolic="YES" id="kmv-AV-7Gi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-t3-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181" y="170"/>
+            <point key="canvasLocation" x="2337" y="-346"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="pVP-E5-lRT">
+            <objects>
+                <viewController title="Information" id="m6V-B7-PXI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f9U-sq-P19"/>
+                        <viewControllerLayoutGuide type="bottom" id="5LR-e3-oZ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="grk-00-y68">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oU-G0-HTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337" y="331"/>
+        </scene>
+        <!--Request-->
+        <scene sceneID="BUk-au-zf4">
+            <objects>
+                <viewController title="Request" id="Kjt-3x-yDJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JHA-7c-6vJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ghl-Ps-uKY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9wH-md-aCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZD-Mm-Kv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337" y="1007"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mt3-6g-ThO">
