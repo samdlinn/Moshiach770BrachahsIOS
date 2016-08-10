@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1516" y="170"/>
         </scene>
-        <!--Instruction-->
+        <!--Instructions for Writing-->
         <scene sceneID="ihS-xj-m6q">
             <objects>
-                <viewController title="Instruction" id="zsU-P4-aAe" sceneMemberID="viewController">
+                <viewController title="Instructions for Writing" id="zsU-P4-aAe" customClass="InformationViewController" customModule="Moshiach770Brachahs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cns-ZG-p7i"/>
                         <viewControllerLayoutGuide type="bottom" id="RwO-ke-5Lp"/>
@@ -70,21 +70,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-E9-Udo">
-                                <rect key="frame" x="20" y="72" width="333" height="396"/>
-                                <string key="text">	When writing to the Rebbe King Moshiach Shlita include your Jewish Name and Mothers’s name (a non-Jew writes their father’s name) and likewise for all those you are requesting a blessing for (family name is not necessary). Good news is also something to write to the Rebbe King Moshiach Shlita and god resolutions to add in Torah and Mitzvos(especially Torah study about Moshiach and Tzedakah donations) which will add in receiving the blessing. Mainly accept the kingship of Moshiach by writing “Long Live the Rebbe King Moshiach forever) to his majesty. The best is to visit the Rebbe King Moshiach Shlita in person in 770 Eastern pkwy Brooklyn, New York at Sunday dollars etc. if this is not possible this app with get the letter to Moshiach.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-VD-ywm">
+                                <rect key="frame" x="0.0" y="0.0" width="601" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-1o-L1O">
+                                        <rect key="frame" x="1" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH2-FJ-gu0">
+                                                <rect key="frame" x="8" y="66" width="584" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-a5-jOd">
+                                                <rect key="frame" x="8" y="132" width="584" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Cmv-a5-jOd" secondAttribute="trailing" id="Ebk-lM-vA2"/>
+                                            <constraint firstItem="Cmv-a5-jOd" firstAttribute="top" secondItem="JH2-FJ-gu0" secondAttribute="bottom" constant="46" id="Hql-Dc-pBf"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Cmv-a5-jOd" secondAttribute="bottom" id="IHj-Ys-XQK"/>
+                                            <constraint firstItem="Cmv-a5-jOd" firstAttribute="top" secondItem="JH2-FJ-gu0" secondAttribute="bottom" constant="46" id="McR-0d-Euh"/>
+                                            <constraint firstItem="JH2-FJ-gu0" firstAttribute="leading" secondItem="kjd-1o-L1O" secondAttribute="leadingMargin" id="S97-H7-8Jf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="JH2-FJ-gu0" secondAttribute="trailing" id="chv-MA-6di"/>
+                                            <constraint firstItem="Cmv-a5-jOd" firstAttribute="leading" secondItem="kjd-1o-L1O" secondAttribute="leadingMargin" id="iF0-m7-q3q"/>
+                                            <constraint firstItem="JH2-FJ-gu0" firstAttribute="top" secondItem="kjd-1o-L1O" secondAttribute="topMargin" constant="5" id="sHx-jG-CX0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kjd-1o-L1O" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="top" id="go1-27-j4M"/>
+                                    <constraint firstItem="kjd-1o-L1O" firstAttribute="leading" secondItem="Ojc-VD-ywm" secondAttribute="leading" constant="1" id="lYm-dR-VMq"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjd-1o-L1O" secondAttribute="trailing" id="vbF-Te-mB8"/>
+                                    <constraint firstItem="kjd-1o-L1O" firstAttribute="width" secondItem="Ojc-VD-ywm" secondAttribute="width" constant="-1" id="xUa-5s-EbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="kjd-1o-L1O" secondAttribute="bottom" id="yTp-tD-QbP"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LeR-E9-Udo" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" id="Euf-hN-ljW"/>
-                            <constraint firstItem="RwO-ke-5Lp" firstAttribute="top" secondItem="LeR-E9-Udo" secondAttribute="bottom" constant="132" id="F7t-xk-tZh"/>
-                            <constraint firstItem="LeR-E9-Udo" firstAttribute="top" secondItem="Cns-ZG-p7i" secondAttribute="bottom" constant="8" symbolic="YES" id="kmv-AV-7Gi"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="top" secondItem="js8-4Z-fuk" secondAttribute="topMargin" id="WPB-K5-ywI"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="trailing" secondItem="js8-4Z-fuk" secondAttribute="trailingMargin" constant="21" id="XoF-Vk-3lY"/>
+                            <constraint firstItem="RwO-ke-5Lp" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="bottom" id="YU8-Mw-lYA"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" constant="-20" id="aSO-Le-Y6q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="InformationLabel" destination="JH2-FJ-gu0" id="ODu-mK-DCE"/>
+                        <outlet property="SampleLetter" destination="Cmv-a5-jOd" id="grY-6r-yfP"/>
+                        <outlet property="scrollView" destination="Ojc-VD-ywm" id="9rg-O8-JxI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-t3-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +132,7 @@
         <!--Information-->
         <scene sceneID="pVP-E5-lRT">
             <objects>
-                <viewController title="Information" id="m6V-B7-PXI" sceneMemberID="viewController">
+                <viewController title="Information" id="m6V-B7-PXI" customClass="InstructionViewController" customModule="Moshiach770Brachahs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f9U-sq-P19"/>
                         <viewControllerLayoutGuide type="bottom" id="5LR-e3-oZ6"/>
@@ -101,17 +140,54 @@
                     <view key="view" contentMode="scaleToFill" id="grk-00-y68">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-Rh-SgW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES4-f1-hrT">
+                                        <rect key="frame" x="8" y="8" width="584" height="20"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ES4-f1-hrT" firstAttribute="top" secondItem="dJK-Rh-SgW" secondAttribute="topMargin" id="CDu-yl-mWi"/>
+                                    <constraint firstItem="ES4-f1-hrT" firstAttribute="trailing" secondItem="dJK-Rh-SgW" secondAttribute="trailingMargin" id="HVk-6C-HO9"/>
+                                    <constraint firstItem="ES4-f1-hrT" firstAttribute="width" secondItem="dJK-Rh-SgW" secondAttribute="width" constant="-16" id="VQv-1I-897"/>
+                                    <constraint firstItem="ES4-f1-hrT" firstAttribute="leading" secondItem="dJK-Rh-SgW" secondAttribute="leadingMargin" id="hCg-vj-RQE"/>
+                                    <constraint firstItem="ES4-f1-hrT" firstAttribute="bottom" secondItem="dJK-Rh-SgW" secondAttribute="bottomMargin" id="hqP-tZ-LLO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="leading" secondItem="grk-00-y68" secondAttribute="leadingMargin" constant="-20" id="KBt-Iv-zhG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJK-Rh-SgW" secondAttribute="trailing" constant="-20" id="TcL-hO-UGI"/>
+                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="top" secondItem="grk-00-y68" secondAttribute="topMargin" id="XwJ-mt-iwc"/>
+                            <constraint firstItem="5LR-e3-oZ6" firstAttribute="top" secondItem="dJK-Rh-SgW" secondAttribute="bottom" id="mQB-FA-beL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="dJK-Rh-SgW" id="8Hd-MJ-HsG"/>
+                        <outlet property="textLabel" destination="ES4-f1-hrT" id="DQp-uE-P1F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oU-G0-HTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2337" y="331"/>
         </scene>
-        <!--Request-->
+        <!--Barachah Request-->
         <scene sceneID="BUk-au-zf4">
             <objects>
-                <viewController title="Request" id="Kjt-3x-yDJ" sceneMemberID="viewController">
+                <viewController title="Barachah Request" id="Kjt-3x-yDJ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JHA-7c-6vJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Ghl-Ps-uKY"/>
