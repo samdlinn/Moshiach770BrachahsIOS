@@ -164,7 +164,7 @@
         <!--Barachah Request-->
         <scene sceneID="BUk-au-zf4">
             <objects>
-                <viewController title="Barachah Request" id="Kjt-3x-yDJ" sceneMemberID="viewController">
+                <viewController title="Barachah Request" id="Kjt-3x-yDJ" customClass="RequestViewController" customModule="Moshiach770Brachahs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JHA-7c-6vJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Ghl-Ps-uKY"/>
@@ -172,8 +172,68 @@
                     <view key="view" contentMode="scaleToFill" id="9wH-md-aCZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQP-ly-IZL">
+                                <rect key="frame" x="534" y="533" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-XQ-UXW">
+                                <rect key="frame" x="14" y="118" width="566" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKf-ma-tCH">
+                                <rect key="frame" x="14" y="64" width="566" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jbz-V1-1qs">
+                                <rect key="frame" x="512" y="564" width="68" height="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="QgH-d1-hi6"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-js-d6k">
+                                <rect key="frame" x="14" y="533" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="Kjt-3x-yDJ" eventType="touchUpInside" id="tSO-2W-1G0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ghl-Ps-uKY" firstAttribute="top" secondItem="Jbz-V1-1qs" secondAttribute="bottom" constant="22" id="5gS-H3-YFT"/>
+                            <constraint firstAttribute="bottom" secondItem="GvZ-js-d6k" secondAttribute="bottom" constant="37" id="6wg-Mf-27l"/>
+                            <constraint firstItem="AKf-ma-tCH" firstAttribute="top" secondItem="9wH-md-aCZ" secondAttribute="topMargin" constant="64" id="Din-IM-EhX"/>
+                            <constraint firstItem="GvZ-js-d6k" firstAttribute="leading" secondItem="9wH-md-aCZ" secondAttribute="leadingMargin" constant="-6" id="FEN-ob-YuQ"/>
+                            <constraint firstItem="Rsa-XQ-UXW" firstAttribute="trailing" secondItem="uQP-ly-IZL" secondAttribute="trailing" id="Fiy-Cf-w07"/>
+                            <constraint firstItem="Ghl-Ps-uKY" firstAttribute="top" secondItem="uQP-ly-IZL" secondAttribute="bottom" constant="37" id="GLl-SZ-Zvm"/>
+                            <constraint firstItem="uQP-ly-IZL" firstAttribute="top" secondItem="Rsa-XQ-UXW" secondAttribute="bottom" constant="1" id="Mp0-PN-YQs"/>
+                            <constraint firstItem="Rsa-XQ-UXW" firstAttribute="top" secondItem="AKf-ma-tCH" secondAttribute="bottom" id="V8Y-OK-bx9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AKf-ma-tCH" secondAttribute="trailing" id="cvO-ep-scU"/>
+                            <constraint firstItem="uQP-ly-IZL" firstAttribute="trailing" secondItem="9wH-md-aCZ" secondAttribute="trailingMargin" id="dj2-bC-aaf"/>
+                            <constraint firstItem="Jbz-V1-1qs" firstAttribute="top" secondItem="uQP-ly-IZL" secondAttribute="bottom" constant="1" id="eZ2-C5-8Kz"/>
+                            <constraint firstItem="AKf-ma-tCH" firstAttribute="leading" secondItem="9wH-md-aCZ" secondAttribute="leadingMargin" constant="-6" id="g3R-pG-gnW"/>
+                            <constraint firstItem="Rsa-XQ-UXW" firstAttribute="leading" secondItem="AKf-ma-tCH" secondAttribute="leading" id="lSF-cX-YMu"/>
+                            <constraint firstItem="AKf-ma-tCH" firstAttribute="bottom" secondItem="JHA-7c-6vJ" secondAttribute="bottom" constant="54" id="q2L-DX-cZ2"/>
+                            <constraint firstItem="Jbz-V1-1qs" firstAttribute="trailing" secondItem="uQP-ly-IZL" secondAttribute="trailing" id="stF-uV-CtD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instructionTextView" destination="AKf-ma-tCH" id="iiM-vC-0Dv"/>
+                        <outlet property="messageTextView" destination="Rsa-XQ-UXW" id="sD2-cc-NAQ"/>
+                        <outlet property="paypalButton" destination="uQP-ly-IZL" id="53z-yL-gg4"/>
+                        <outlet property="paypalTextView" destination="Jbz-V1-1qs" id="5Vw-6l-eFW"/>
+                        <outlet property="sendButton" destination="GvZ-js-d6k" id="XQf-GT-ZUx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZD-Mm-Kv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

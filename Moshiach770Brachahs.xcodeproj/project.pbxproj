@@ -18,6 +18,7 @@
 		9B643FD01D35A43B00BE4638 /* main_menu_770.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B643FCF1D35A43B00BE4638 /* main_menu_770.jpg */; };
 		9BEC031D1D5921C3001A2E94 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC031C1D5921C3001A2E94 /* InformationViewController.swift */; };
 		9BEC03241D5A7510001A2E94 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC03231D5A7510001A2E94 /* InstructionViewController.swift */; };
+		9BEC03271D5D0FEB001A2E94 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC03261D5D0FEB001A2E94 /* RequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9B643FCF1D35A43B00BE4638 /* main_menu_770.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_menu_770.jpg; path = Images/main_menu_770.jpg; sourceTree = "<group>"; };
 		9BEC031C1D5921C3001A2E94 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		9BEC03231D5A7510001A2E94 /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		9BEC03261D5D0FEB001A2E94 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9BEC03211D592318001A2E94 /* Menu */,
 				9BEC03201D5922FF001A2E94 /* InformationView */,
 				9BEC03221D5A74B9001A2E94 /* Instruction */,
+				9BEC03251D5D0FD1001A2E94 /* Request */,
 				9B643FA11D359C9900BE4638 /* AppDelegate.swift */,
 				9B643FA51D359C9900BE4638 /* Main.storyboard */,
 				9B643FA81D359C9900BE4638 /* Assets.xcassets */,
@@ -159,6 +162,14 @@
 				9BEC03231D5A7510001A2E94 /* InstructionViewController.swift */,
 			);
 			name = Instruction;
+			sourceTree = "<group>";
+		};
+		9BEC03251D5D0FD1001A2E94 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9BEC03261D5D0FEB001A2E94 /* RequestViewController.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			files = (
 				9BEC03241D5A7510001A2E94 /* InstructionViewController.swift in Sources */,
 				9B10CDBC1D54E6980006019B /* menuItemTableViewController.swift in Sources */,
+				9BEC03271D5D0FEB001A2E94 /* RequestViewController.swift in Sources */,
 				9B10CDBA1D53C4C70006019B /* menuTableViewCell.swift in Sources */,
 				9B643FA21D359C9900BE4638 /* AppDelegate.swift in Sources */,
 				9BEC031D1D5921C3001A2E94 /* InformationViewController.swift in Sources */,
