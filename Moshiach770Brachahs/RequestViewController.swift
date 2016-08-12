@@ -28,11 +28,17 @@ class RequestViewController: UIViewController, MFMailComposeViewControllerDelega
         paypalButton.setTitle("PayPal", forState: UIControlState.Normal)
         
         paypalTextView.text = "Please Donate (Optional)"
-        
+        paypalTextView.sizeToFit()
         
         // Do any additional setup after loading the view.
     }
 
+    
+    // if the paypal button is tapped
+    @IBAction func payPalButtonTapped(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.paypal.me/LivingMoshiach")!)
+    }
+    
     @IBAction func sendButtonTapped(sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {

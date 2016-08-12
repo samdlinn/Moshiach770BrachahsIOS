@@ -176,6 +176,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQP-ly-IZL">
                                 <rect key="frame" x="534" y="533" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="payPalButtonTapped:" destination="Kjt-3x-yDJ" eventType="touchUpInside" id="PYZ-j0-ByY"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-XQ-UXW">
                                 <rect key="frame" x="14" y="118" width="566" height="414"/>
