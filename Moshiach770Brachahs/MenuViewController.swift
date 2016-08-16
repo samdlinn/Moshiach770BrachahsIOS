@@ -22,6 +22,8 @@ class MenuViewController: UIViewController {
         menuImage.image = UIImage(named: "main_menu_770.jpg")
         
         imageLabel.text = "Moshiach 770 Brachahs"
+        imageLabel.textColor = UIColor.whiteColor()
+        imageLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
     }
 
     override func didReceiveMemoryWarning() {
