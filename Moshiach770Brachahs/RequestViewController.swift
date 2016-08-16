@@ -16,24 +16,26 @@ class RequestViewController: UIViewController, MFMailComposeViewControllerDelega
     @IBOutlet weak var messageTextView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var paypalButton: UIButton!
-    @IBOutlet weak var paypalTextView: UITextView!
+    @IBOutlet weak var paypalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         instructionTextView.text = "Write a letter to the Rebbe King Moshiach Shlita:\n(see instructions above)"
+        instructionTextView.backgroundColor = UIColor.yellowColor()
         messageTextView.text = "Write your letter here"
-        
+        messageTextView.layer.borderWidth = 1
+        messageTextView.layer.cornerRadius = 5;
+        messageTextView.clipsToBounds = true;
+        //messageTextView.layer.borderColor = UIColor.blackColor().CGColor
         sendButton.setTitle("Send", forState: UIControlState.Normal)
         paypalButton.setTitle("PayPal", forState: UIControlState.Normal)
         
-        paypalTextView.text = "Please Donate (Optional)"
-        paypalTextView.sizeToFit()
+        self.view.backgroundColor = UIColor.yellowColor()
         
         // Do any additional setup after loading the view.
     }
 
-    
     // if the paypal button is tapped
     @IBAction func payPalButtonTapped(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "https://www.paypal.me/LivingMoshiach")!)

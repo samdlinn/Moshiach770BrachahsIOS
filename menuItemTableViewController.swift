@@ -13,9 +13,13 @@ class menuItemTableViewController: UITableViewController {
     //Mark: Properties
     var items = [String]()
     
+    @IBOutlet weak var menuImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         items = ["Instructions for Writing", "Information", "Barachah Request etc"]
+        self.view.backgroundColor = UIColor.yellowColor()
+        
         // used to make the table view before the status bar
         // self.tableView.contentInset = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
         // don't need because of navigation controller
@@ -47,8 +51,10 @@ class menuItemTableViewController: UITableViewController {
         let cellIdentifier = "MenuTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! menuTableViewCell
         let item = items[indexPath.row]
+        cell.menuItem.textAlignment = .Center
+        cell.layer.borderWidth = 0.5
         cell.menuItem.text = item
-        
+        cell.backgroundColor = UIColor.yellowColor()
         return cell
     }
     

@@ -19,6 +19,7 @@
 		9BEC031D1D5921C3001A2E94 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC031C1D5921C3001A2E94 /* InformationViewController.swift */; };
 		9BEC03241D5A7510001A2E94 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC03231D5A7510001A2E94 /* InstructionViewController.swift */; };
 		9BEC03271D5D0FEB001A2E94 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC03261D5D0FEB001A2E94 /* RequestViewController.swift */; };
+		9BEC032B1D639FE6001A2E94 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC032A1D639FE6001A2E94 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9BEC031C1D5921C3001A2E94 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		9BEC03231D5A7510001A2E94 /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		9BEC03261D5D0FEB001A2E94 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		9BEC032A1D639FE6001A2E94 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		9BEC03211D592318001A2E94 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				9BEC032A1D639FE6001A2E94 /* MenuViewController.swift */,
 				9B10CDBB1D54E6980006019B /* menuItemTableViewController.swift */,
 				9B10CDB91D53C4C70006019B /* menuTableViewCell.swift */,
 			);
@@ -307,6 +310,7 @@
 				9BEC03241D5A7510001A2E94 /* InstructionViewController.swift in Sources */,
 				9B10CDBC1D54E6980006019B /* menuItemTableViewController.swift in Sources */,
 				9BEC03271D5D0FEB001A2E94 /* RequestViewController.swift in Sources */,
+				9BEC032B1D639FE6001A2E94 /* MenuViewController.swift in Sources */,
 				9B10CDBA1D53C4C70006019B /* menuTableViewCell.swift in Sources */,
 				9B643FA21D359C9900BE4638 /* AppDelegate.swift in Sources */,
 				9BEC031D1D5921C3001A2E94 /* InformationViewController.swift in Sources */,
