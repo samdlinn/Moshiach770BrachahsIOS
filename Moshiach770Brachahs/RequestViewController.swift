@@ -22,29 +22,29 @@ class RequestViewController: UIViewController, MFMailComposeViewControllerDelega
         super.viewDidLoad()
 
         instructionTextView.text = "Write a letter to the Rebbe King Moshiach Shlita:\n(see instructions above)"
-        instructionTextView.backgroundColor = UIColor.yellowColor()
+        instructionTextView.backgroundColor = UIColor.yellow
         messageTextView.text = "Write your letter here"
         messageTextView.layer.borderWidth = 1
         messageTextView.layer.cornerRadius = 5;
         messageTextView.clipsToBounds = true;
         //messageTextView.layer.borderColor = UIColor.blackColor().CGColor
-        sendButton.setTitle("Send", forState: UIControlState.Normal)
-        paypalButton.setTitle("PayPal", forState: UIControlState.Normal)
+        sendButton.setTitle("Send", for: UIControlState())
+        paypalButton.setTitle("PayPal", for: UIControlState())
         
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.yellow
         
         // Do any additional setup after loading the view.
     }
 
     // if the paypal button is tapped
-    @IBAction func payPalButtonTapped(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.paypal.me/LivingMoshiach")!)
+    @IBAction func payPalButtonTapped(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "https://www.paypal.me/LivingMoshiach")!)
     }
     
-    @IBAction func sendButtonTapped(sender: AnyObject) {
+    @IBAction func sendButtonTapped(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
@@ -61,18 +61,18 @@ class RequestViewController: UIViewController, MFMailComposeViewControllerDelega
     }
     
     func showSendMailErrorAlert() {
-        let alert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail. Please check e-mail configuration and try again.", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "OK", style: .Default) { _ in
+        let alert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail. Please check e-mail configuration and try again.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { _ in
             // Put here any code that you would like to execute when
             // the user taps that OK button (may be empty in your case if that's just
             // an informative alert)
         }
         alert.addAction(action)
-        self.presentViewController(alert, animated: true){}    }
+        self.present(alert, animated: true){}    }
     
     // Delegate method
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,15 +80,12 @@ class RequestViewController: UIViewController, MFMailComposeViewControllerDelega
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override var shouldAutorotate : Bool {
+        return false
     }
-    */
+    
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 
 }

@@ -18,7 +18,7 @@ class menuItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         items = ["Instructions for Writing", "Information", "Barachah Request etc"]
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.yellow
         
         // used to make the table view before the status bar
         // self.tableView.contentInset = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
@@ -38,54 +38,51 @@ class menuItemTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "MenuTableViewCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! menuTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! menuTableViewCell
         let item = items[indexPath.row]
-        cell.menuItem.textAlignment = .Center
+        cell.menuItem.textAlignment = .center
         cell.layer.borderWidth = 0.5
         cell.menuItem.text = item
-        cell.backgroundColor = UIColor.yellowColor()
+        cell.backgroundColor = UIColor.yellow
         return cell
     }
     
     // MARK: - Navigation
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0
         {
             //first one
-            self.performSegueWithIdentifier("Instruction", sender: self)
+            self.performSegue(withIdentifier: "Instruction", sender: self)
         }
         else if indexPath.row == 1
         {
             //second one
-            self.performSegueWithIdentifier("Information", sender: self)
+            self.performSegue(withIdentifier: "Information", sender: self)
         }
         else if indexPath.row == 2
         {
             //third
-            self.performSegueWithIdentifier("Request", sender: self)
+            self.performSegue(withIdentifier: "Request", sender: self)
         }
     }
     
-    /*
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
+    override var shouldAutorotate : Bool {
+        return false
     }
-     */
     
-
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 }

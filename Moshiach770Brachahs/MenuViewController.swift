@@ -16,13 +16,13 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.edgesForExtendedLayout = UIRectEdge.None;
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.edgesForExtendedLayout = UIRectEdge();
+        self.view.backgroundColor = UIColor.yellow
         
         menuImage.image = UIImage(named: "main_menu_770.jpg")
         
         imageLabel.text = "Moshiach 770 Brachahs"
-        imageLabel.textColor = UIColor.whiteColor()
+        imageLabel.textColor = UIColor.white
         imageLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
     }
 
@@ -30,15 +30,13 @@ class MenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override var shouldAutorotate : Bool {
+        return false
     }
-    */
+    
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 
 }
