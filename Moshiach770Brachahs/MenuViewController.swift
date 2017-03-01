@@ -18,7 +18,7 @@ class MenuViewController: UIViewController {
         
         self.edgesForExtendedLayout = UIRectEdge();
         self.view.backgroundColor = UIColor.yellow
-        
+
         menuImage.image = UIImage(named: "main_menu_770.jpg")
         
         imageLabel.text = "Moshiach 770 Brachahs"
@@ -26,6 +26,11 @@ class MenuViewController: UIViewController {
         imageLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
     }
 
+    override func viewDidLayoutSubviews() {
+        // this didn't work...
+        self.navigationController?.navigationBar.isTranslucent = false;
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
