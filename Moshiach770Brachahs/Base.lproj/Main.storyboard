@@ -201,49 +201,57 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-Rh-SgW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-Rh-SgW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="379"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UjD-Vt-lrF">
-                                        <rect key="frame" x="8" y="66" width="359" height="526"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-zY-TiH">
+                                        <rect key="frame" x="8" y="8" width="359" height="363"/>
+                                        <subviews>
+                                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="11C-rD-ZQf">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="371"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="526" id="x3x-Fa-1qs"/>
+                                            <constraint firstAttribute="trailing" secondItem="11C-rD-ZQf" secondAttribute="trailing" id="CRN-SZ-omQ"/>
+                                            <constraint firstItem="11C-rD-ZQf" firstAttribute="leading" secondItem="wSd-zY-TiH" secondAttribute="leading" id="MGg-rX-LW5"/>
+                                            <constraint firstAttribute="bottom" secondItem="11C-rD-ZQf" secondAttribute="bottom" constant="-8" id="WDc-dQ-2Hr"/>
+                                            <constraint firstItem="11C-rD-ZQf" firstAttribute="top" secondItem="wSd-zY-TiH" secondAttribute="top" id="WU9-fw-kjO"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="UjD-Vt-lrF" firstAttribute="top" secondItem="dJK-Rh-SgW" secondAttribute="top" constant="66" id="0cb-Md-Czq"/>
-                                    <constraint firstAttribute="bottom" secondItem="UjD-Vt-lrF" secondAttribute="bottom" constant="8" id="3Ds-Sg-syE"/>
-                                    <constraint firstAttribute="trailing" secondItem="UjD-Vt-lrF" secondAttribute="trailing" constant="8" id="fsA-6Q-rRF"/>
-                                    <constraint firstItem="UjD-Vt-lrF" firstAttribute="leading" secondItem="dJK-Rh-SgW" secondAttribute="leading" constant="8" id="oR2-gv-fKS"/>
-                                    <constraint firstItem="UjD-Vt-lrF" firstAttribute="width" secondItem="dJK-Rh-SgW" secondAttribute="width" constant="-16" id="oe5-CD-17v"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="bottom" secondItem="dJK-Rh-SgW" secondAttribute="bottomMargin" id="6JO-IU-2Ti"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="leading" secondItem="dJK-Rh-SgW" secondAttribute="leadingMargin" id="CQ3-cj-iep"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="top" secondItem="dJK-Rh-SgW" secondAttribute="topMargin" id="WRX-r7-6bw"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="centerY" secondItem="dJK-Rh-SgW" secondAttribute="centerY" id="a8H-i6-5QE"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="centerX" secondItem="dJK-Rh-SgW" secondAttribute="centerX" id="mR3-Ov-3Vg"/>
+                                    <constraint firstItem="wSd-zY-TiH" firstAttribute="trailing" secondItem="dJK-Rh-SgW" secondAttribute="trailingMargin" id="rWn-nh-CoT"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="width" secondItem="grk-00-y68" secondAttribute="width" id="BNs-kb-75M"/>
-                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="top" secondItem="grk-00-y68" secondAttribute="top" id="O0h-Ue-d9b"/>
-                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="leading" secondItem="grk-00-y68" secondAttribute="leading" id="ejj-Rd-4cY"/>
-                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="width" secondItem="grk-00-y68" secondAttribute="width" id="eqe-U6-xeh"/>
-                            <constraint firstItem="5LR-e3-oZ6" firstAttribute="top" secondItem="dJK-Rh-SgW" secondAttribute="bottom" id="g6Y-ox-hw1"/>
-                            <constraint firstAttribute="trailing" secondItem="dJK-Rh-SgW" secondAttribute="trailing" id="xfq-Fq-slh"/>
+                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="top" secondItem="f9U-sq-P19" secondAttribute="bottom" id="3se-Ph-Mfk"/>
+                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="bottom" secondItem="5LR-e3-oZ6" secondAttribute="top" id="NYb-dc-3JZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dJK-Rh-SgW" secondAttribute="trailing" id="icc-wC-C6P"/>
+                            <constraint firstItem="dJK-Rh-SgW" firstAttribute="leading" secondItem="grk-00-y68" secondAttribute="leading" id="r2m-gA-Tc8"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="scrollView" destination="dJK-Rh-SgW" id="8Hd-MJ-HsG"/>
-                        <outlet property="textLabel" destination="UjD-Vt-lrF" id="MpT-P4-3Y7"/>
+                        <outlet property="textView" destination="11C-rD-ZQf" id="gBo-c7-864"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oU-G0-HTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149" y="321"/>
+            <point key="canvasLocation" x="3148" y="320.68965517241384"/>
         </scene>
         <!--Barachah Request-->
         <scene sceneID="BUk-au-zf4">
