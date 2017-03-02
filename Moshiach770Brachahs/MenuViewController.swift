@@ -16,7 +16,8 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.edgesForExtendedLayout = UIRectEdge();
+//        self.edgesForExtendedLayout = UIRectEdge();
+        self.edgesForExtendedLayout = []
         self.view.backgroundColor = UIColor.yellow
 
         menuImage.image = UIImage(named: "main_menu_770.jpg")
@@ -28,7 +29,8 @@ class MenuViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         // this didn't work...
-        self.navigationController?.navigationBar.isTranslucent = false;
+        self.navigationController?.navigationBar.isTranslucent = false
+//        self.edgesForExtendedLayout = []
     }
     
     override func didReceiveMemoryWarning() {

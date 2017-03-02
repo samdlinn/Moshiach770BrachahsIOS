@@ -25,6 +25,7 @@ class InstructionViewController: UIViewController {
         textLabel.backgroundColor = UIColor.yellow
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,6 +34,7 @@ class InstructionViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.textLabel.setContentOffset(CGPoint.zero, animated: false)
+        self.navigationController?.navigationBar.isTranslucent = false;
     }
 
     override var shouldAutorotate : Bool {

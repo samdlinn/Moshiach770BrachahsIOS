@@ -64,6 +64,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Menu" id="ah1-GI-JWw"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="imageLabel" destination="WTV-CK-uH3" id="bcG-iQ-C33"/>
                         <outlet property="menuImage" destination="iAE-xM-idX" id="42F-XW-ud9"/>
@@ -127,56 +128,66 @@
         <!--Instructions for Writing-->
         <scene sceneID="ihS-xj-m6q">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-t3-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Instructions for Writing" id="zsU-P4-aAe" customClass="InformationViewController" customModule="Moshiach770Brachahs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cns-ZG-p7i"/>
                         <viewControllerLayoutGuide type="bottom" id="RwO-ke-5Lp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="js8-4Z-fuk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-VD-ywm">
-                                <rect key="frame" x="-4" y="0.0" width="376" height="600"/>
+                            <scrollView multipleTouchEnabled="YES" contentMode="top" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-VD-ywm">
+                                <rect key="frame" x="-4" y="0.0" width="376" height="379"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-1d-UaD">
-                                        <rect key="frame" x="8" y="8" width="360" height="584"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-zh-TK6">
+                                        <rect key="frame" x="8" y="8" width="360" height="363"/>
+                                        <subviews>
+                                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-1d-UaD">
+                                                <rect key="frame" x="-4" y="-4" width="368" height="371"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="584" id="Nts-3Z-2JJ"/>
+                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="top" secondItem="aAk-zh-TK6" secondAttribute="top" constant="-4" id="EQe-Wc-LvO"/>
+                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerY" secondItem="aAk-zh-TK6" secondAttribute="centerY" id="S2h-Ry-Ey5"/>
+                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerX" secondItem="aAk-zh-TK6" secondAttribute="centerX" id="Wci-Y8-z53"/>
+                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="leading" secondItem="aAk-zh-TK6" secondAttribute="leading" constant="-4" id="nwi-0d-0xe"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="trailing" secondItem="Ojc-VD-ywm" secondAttribute="trailingMargin" id="3vV-q4-26k"/>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="width" secondItem="Ojc-VD-ywm" secondAttribute="width" constant="-16" id="HNu-gv-rb8"/>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerY" secondItem="Ojc-VD-ywm" secondAttribute="centerY" id="WsT-6F-3E1"/>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="bottom" secondItem="Ojc-VD-ywm" secondAttribute="bottomMargin" id="iJd-ql-GaT"/>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="topMargin" id="l7J-72-RHw"/>
-                                    <constraint firstItem="Qa4-1d-UaD" firstAttribute="leading" secondItem="Ojc-VD-ywm" secondAttribute="leadingMargin" id="tnL-na-zpr"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="leading" secondItem="Ojc-VD-ywm" secondAttribute="leadingMargin" id="7g9-mU-CQX"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="centerX" secondItem="Ojc-VD-ywm" secondAttribute="centerX" id="CBy-tw-WG9"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="centerY" secondItem="Ojc-VD-ywm" secondAttribute="centerY" id="I0U-uI-I8g"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="topMargin" id="LHP-ak-EHZ"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="bottom" secondItem="Ojc-VD-ywm" secondAttribute="bottomMargin" id="aaS-Wo-NYa"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="trailing" secondItem="Ojc-VD-ywm" secondAttribute="trailingMargin" id="bJN-mg-ZES"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="trailing" secondItem="js8-4Z-fuk" secondAttribute="trailingMargin" constant="21" id="XoF-Vk-3lY"/>
-                            <constraint firstItem="RwO-ke-5Lp" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="bottom" constant="-157" id="YU8-Mw-lYA"/>
-                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" constant="-20" id="aSO-Le-Y6q"/>
-                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="width" secondItem="js8-4Z-fuk" secondAttribute="width" constant="1" id="ffo-e6-Wc1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ojc-VD-ywm" secondAttribute="trailing" constant="-13" id="Ufz-XK-YpZ"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" constant="-20" id="Utg-cg-QkZ"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="bottom" secondItem="RwO-ke-5Lp" secondAttribute="top" id="rNb-7k-EjP"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="top" secondItem="Cns-ZG-p7i" secondAttribute="bottom" id="uqD-5U-M0P"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="scrollView" destination="Ojc-VD-ywm" id="9rg-O8-JxI"/>
                         <outlet property="textView" destination="Qa4-1d-UaD" id="kAL-qB-dcU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-t3-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149" y="-346"/>
+            <point key="canvasLocation" x="3148" y="-346.77661169415296"/>
         </scene>
         <!--Information-->
         <scene sceneID="pVP-E5-lRT">
@@ -187,11 +198,11 @@
                         <viewControllerLayoutGuide type="bottom" id="5LR-e3-oZ6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="grk-00-y68">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-Rh-SgW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="379"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UjD-Vt-lrF">
                                         <rect key="frame" x="8" y="66" width="359" height="526"/>
@@ -224,6 +235,7 @@
                             <constraint firstAttribute="trailing" secondItem="dJK-Rh-SgW" secondAttribute="trailing" id="xfq-Fq-slh"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="scrollView" destination="dJK-Rh-SgW" id="8Hd-MJ-HsG"/>
                         <outlet property="textLabel" destination="UjD-Vt-lrF" id="MpT-P4-3Y7"/>
@@ -242,11 +254,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Ghl-Ps-uKY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9wH-md-aCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQP-ly-IZL">
-                                <rect key="frame" x="313" y="229" width="46" height="177"/>
+                                <rect key="frame" x="313" y="165" width="46" height="177"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="s2l-Aq-LdB"/>
                                 </constraints>
@@ -275,7 +287,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-js-d6k">
-                                <rect key="frame" x="10" y="376" width="46" height="30"/>
+                                <rect key="frame" x="10" y="312" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="sendButtonTapped:" destination="Kjt-3x-yDJ" eventType="touchUpInside" id="tSO-2W-1G0"/>
@@ -307,6 +319,7 @@
                             <constraint firstItem="Rsa-XQ-UXW" firstAttribute="top" secondItem="AKf-ma-tCH" secondAttribute="bottom" id="xPL-rQ-uW3"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="instructionTextView" destination="AKf-ma-tCH" id="iiM-vC-0Dv"/>
                         <outlet property="messageTextView" destination="Rsa-XQ-UXW" id="sD2-cc-NAQ"/>
@@ -322,9 +335,11 @@
         <!--Navigation Controller-->
         <scene sceneID="aMe-Jh-pU8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qeb-Vi-mLE" sceneMemberID="viewController">
+                <navigationController id="Qeb-Vi-mLE" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yeV-wR-eI0">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="yeV-wR-eI0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
