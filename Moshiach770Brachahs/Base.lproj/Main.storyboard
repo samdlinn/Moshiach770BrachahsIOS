@@ -139,13 +139,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="top" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-VD-ywm">
-                                <rect key="frame" x="-4" y="0.0" width="376" height="379"/>
+                                <rect key="frame" x="3" y="0.0" width="369" height="379"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-zh-TK6">
-                                        <rect key="frame" x="8" y="8" width="360" height="363"/>
+                                        <rect key="frame" x="8" y="8" width="356" height="363"/>
                                         <subviews>
                                             <textView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-1d-UaD">
-                                                <rect key="frame" x="-4" y="-4" width="368" height="371"/>
+                                                <rect key="frame" x="-4" y="-4" width="361" height="371"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -156,25 +156,25 @@
                                         <constraints>
                                             <constraint firstItem="Qa4-1d-UaD" firstAttribute="top" secondItem="aAk-zh-TK6" secondAttribute="top" constant="-4" id="EQe-Wc-LvO"/>
                                             <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerY" secondItem="aAk-zh-TK6" secondAttribute="centerY" id="S2h-Ry-Ey5"/>
-                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerX" secondItem="aAk-zh-TK6" secondAttribute="centerX" id="Wci-Y8-z53"/>
+                                            <constraint firstItem="Qa4-1d-UaD" firstAttribute="centerX" secondItem="aAk-zh-TK6" secondAttribute="centerX" constant="-1.5" id="Wci-Y8-z53"/>
                                             <constraint firstItem="Qa4-1d-UaD" firstAttribute="leading" secondItem="aAk-zh-TK6" secondAttribute="leading" constant="-4" id="nwi-0d-0xe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="aAk-zh-TK6" firstAttribute="leading" secondItem="Ojc-VD-ywm" secondAttribute="leadingMargin" id="7g9-mU-CQX"/>
-                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="centerX" secondItem="Ojc-VD-ywm" secondAttribute="centerX" id="CBy-tw-WG9"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="centerX" secondItem="Ojc-VD-ywm" secondAttribute="centerX" constant="1.5" id="CBy-tw-WG9"/>
                                     <constraint firstItem="aAk-zh-TK6" firstAttribute="centerY" secondItem="Ojc-VD-ywm" secondAttribute="centerY" id="I0U-uI-I8g"/>
                                     <constraint firstItem="aAk-zh-TK6" firstAttribute="top" secondItem="Ojc-VD-ywm" secondAttribute="topMargin" id="LHP-ak-EHZ"/>
                                     <constraint firstItem="aAk-zh-TK6" firstAttribute="bottom" secondItem="Ojc-VD-ywm" secondAttribute="bottomMargin" id="aaS-Wo-NYa"/>
-                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="trailing" secondItem="Ojc-VD-ywm" secondAttribute="trailingMargin" id="bJN-mg-ZES"/>
+                                    <constraint firstItem="aAk-zh-TK6" firstAttribute="trailing" secondItem="Ojc-VD-ywm" secondAttribute="trailingMargin" constant="3" id="bJN-mg-ZES"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Ojc-VD-ywm" secondAttribute="trailing" constant="-13" id="Ufz-XK-YpZ"/>
-                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" constant="-20" id="Utg-cg-QkZ"/>
+                            <constraint firstItem="Ojc-VD-ywm" firstAttribute="leading" secondItem="js8-4Z-fuk" secondAttribute="leadingMargin" constant="-13" id="Utg-cg-QkZ"/>
                             <constraint firstItem="Ojc-VD-ywm" firstAttribute="bottom" secondItem="RwO-ke-5Lp" secondAttribute="top" id="rNb-7k-EjP"/>
                             <constraint firstItem="Ojc-VD-ywm" firstAttribute="top" secondItem="Cns-ZG-p7i" secondAttribute="bottom" id="uqD-5U-M0P"/>
                         </constraints>
